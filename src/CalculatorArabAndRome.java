@@ -11,7 +11,7 @@ public class CalculatorArabAndRome {
         String error = "Нарушено правило ввода числа! Вариант ввода(5 + 3) или (X + IV)!";
         String[] values = line.split(" ");
         for (int i = 0; i < values.length; i++) {
-            if (i > 2) {
+            if (i != 2) {
                 System.err.println(error);
                 return;
             }
